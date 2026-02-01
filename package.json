@@ -1,0 +1,33 @@
+{
+  "name": "telegram-sales-bot",
+  "version": "1.0.0",
+  "description": "A complete Telegram sales bot with product management, orders, wallet, and admin panel",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"No tests specified\""
+  },
+  "dependencies": {
+    "telegraf": "^4.15.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "axios": "^1.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "sales",
+    "ecommerce",
+    "orders",
+    "wallet"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
