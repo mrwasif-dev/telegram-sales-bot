@@ -1,14 +1,8 @@
-
----
-
-## **`app.json` فائل (Heroku کے لیے):**
-
-```json
 {
   "name": "Telegram Sales Bot",
   "description": "A complete Telegram sales bot with admin panel, product management, orders, and wallet system",
-  "repository": "https://github.com/yourusername/telegram-sales-bot",
-  "logo": "https://raw.githubusercontent.com/yourusername/telegram-sales-bot/main/assets/logo.png",
+  "repository": "https://github.com/mrwasif-dev/telegram-sales-bot",
+  "logo": "https://raw.githubusercontent.com/mrwasif-dev/telegram-sales-bot/main/assets/logo.png",
   "keywords": [
     "telegram",
     "bot",
@@ -77,6 +71,6 @@
     "postdeploy": "echo 'Deployment completed successfully! Your bot should be running now.'"
   },
   "success_url": "/",
-  "website": "https://github.com/yourusername/telegram-sales-bot",
+  "website": "https://github.com/mrwasif-dev/telegram-sales-bot",
   "stack": "heroku-22"
 }
