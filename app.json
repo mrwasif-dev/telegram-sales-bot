@@ -1,76 +1,21 @@
 {
-  "name": "Telegram Sales Bot",
-  "description": "A complete Telegram sales bot with admin panel, product management, orders, and wallet system",
+  "name": "Telegram Shop Bot",
+  "description": "Telegram bot for online sales",
   "repository": "https://github.com/mrwasif-dev/telegram-sales-bot",
-  "logo": "https://raw.githubusercontent.com/mrwasif-dev/telegram-sales-bot/main/assets/logo.png",
-  "keywords": [
-    "telegram",
-    "bot",
-    "ecommerce",
-    "sales",
-    "shopping",
-    "store",
-    "admin",
-    "orders",
-    "wallet",
-    "nodejs"
-  ],
+  "keywords": ["node", "telegram", "bot"],
   "env": {
     "BOT_TOKEN": {
-      "description": "Your Telegram Bot Token from @BotFather",
+      "description": "Telegram Bot Token",
       "required": true
     },
     "ADMIN_ID": {
-      "description": "Your Telegram User ID (get it from @userinfobot)",
+      "description": "Admin User ID",
       "required": true
-    },
-    "STRIPE_SECRET_KEY": {
-      "description": "Stripe Secret Key for payments (optional)",
-      "required": false
-    },
-    "STRIPE_PUBLIC_KEY": {
-      "description": "Stripe Publishable Key (optional)",
-      "required": false
-    },
-    "PAYMENT_PROVIDER": {
-      "description": "Payment provider (stripe/test)",
-      "value": "test",
-      "required": false
-    },
-    "WEBHOOK_URL": {
-      "description": "Webhook URL (will be auto-filled by Heroku)",
-      "required": false
-    }
-  },
-  "formation": {
-    "web": {
-      "quantity": 1,
-      "size": "eco"
-    },
-    "worker": {
-      "quantity": 1,
-      "size": "eco"
     }
   },
   "buildpacks": [
     {
       "url": "heroku/nodejs"
     }
-  ],
-  "addons": [
-    {
-      "plan": "heroku-postgresql:hobby-dev",
-      "as": "DATABASE"
-    },
-    {
-      "plan": "heroku-redis:hobby-dev",
-      "as": "REDIS"
-    }
-  ],
-  "scripts": {
-    "postdeploy": "echo 'Deployment completed successfully! Your bot should be running now.'"
-  },
-  "success_url": "/",
-  "website": "https://github.com/mrwasif-dev/telegram-sales-bot",
-  "stack": "heroku-22"
+  ]
 }
